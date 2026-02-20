@@ -2,13 +2,7 @@ html<!DOCTYPE html>
 <html>
 
   <head>
-<link rel="manifest" href="manifest.json">
-   <script>
-     if ('serviceWorker' in navigator) {
-       navigator.serviceWorker.register('sw.js');
-     }
-   </script>    <title>My Picture Notebook</title>
-<style>
+    <style>
   body {
     background: linear-gradient(135deg, #ffd6e7, #ffecb3, #d4f1f9, #d5f5e3);
     background-size: 400% 400%;
@@ -22,6 +16,13 @@ html<!DOCTYPE html>
     100% { background-position: 0% 50%; }
   }
 </style>
+<link rel="manifest" href="manifest.json">
+   <script>
+     if ('serviceWorker' in navigator) {
+       navigator.serviceWorker.register('sw.js');
+     }
+   </script>    <title>My Picture Notebook</title>
+
     <style>
 
   /* The whole page background */
@@ -198,4 +199,5 @@ html<!DOCTYPE html>
 
 
 </html>
+
 
