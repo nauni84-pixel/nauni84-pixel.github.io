@@ -8,7 +8,20 @@ html<!DOCTYPE html>
        navigator.serviceWorker.register('sw.js');
      }
    </script>    <title>My Picture Notebook</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #ffd6e7, #ffecb3, #d4f1f9, #d5f5e3);
+    background-size: 400% 400%;
+    animation: rainbow 8s ease infinite;
+    font-family: 'Comic Sans MS', cursive;
+  }
 
+  @keyframes rainbow {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
     <style>
 
   /* The whole page background */
@@ -185,3 +198,4 @@ html<!DOCTYPE html>
 
 
 </html>
+
