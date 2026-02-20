@@ -2,7 +2,12 @@ html<!DOCTYPE html>
 <html>
 
   <head>
-    <title>My Picture Notebook</title>
+<link rel="manifest" href="manifest.json">
+   <script>
+     if ('serviceWorker' in navigator) {
+       navigator.serviceWorker.register('sw.js');
+     }
+   </script>    <title>My Picture Notebook</title>
 
     <style>
 
@@ -177,5 +182,6 @@ html<!DOCTYPE html>
 </script>
 
   </body>
+
 
 </html>
